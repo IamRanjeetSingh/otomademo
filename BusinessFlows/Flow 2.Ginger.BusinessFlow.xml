@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="b69c11e1-db76-460e-8b49-2c4996ed47cd" ItemType="BusinessFlow" CreatedBy="harsisin" Created="202310191101" GingerVersion="23.4.0.0" Version="6" LastUpdateBy="harsisin" LastUpdate="202310191102" />
+<BusinessFlow Guid="b69c11e1-db76-460e-8b49-2c4996ed47cd" Name="Flow 2" ParentGuid="00000000-0000-0000-0000-000000000000" Source="Ginger" Status="Unknown">
+<Activities>
+<Activity Active="True" ActivitiesGroupID="Group2" ActivityName="BF2_WEB_A1" Guid="72d0e677-d18b-487b-8aa0-78aaa392906d" ParentGuid="72d0e677-d18b-487b-8aa0-78aaa392906d" Type="Link" />
+<Activity Active="True" ActivitiesGroupID="Group2" ActivityName="BF2_REST_A2" Guid="3777ab0b-44a3-4dee-bcf3-dab4c878fada" ParentGuid="3777ab0b-44a3-4dee-bcf3-dab4c878fada" Type="Link" />
+</Activities>
+
+<ActivitiesGroups>
+<ActivitiesGroup Guid="21b81b86-1a60-41a6-aa67-09cff43aed41" Name="Group2" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True">
+<ActivitiesIdentifiers>
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="72d0e677-d18b-487b-8aa0-78aaa392906d" ActivityName="BF2_WEB_A1" ActivityParentGuid="00000000-0000-0000-0000-000000000000" Guid="5fe6ed28-1fb8-4bd3-bc60-68dd100d52bb" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="3777ab0b-44a3-4dee-bcf3-dab4c878fada" ActivityName="BF2_REST_A2" ActivityParentGuid="00000000-0000-0000-0000-000000000000" Guid="c0793389-8f0c-4a58-8f5a-ab7868b67a38" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</ActivitiesIdentifiers>
+</ActivitiesGroup>
+</ActivitiesGroups>
+
+<TargetApplications>
+<TargetApplication AppName="MyWebApp" Guid="a0f33947-6c58-4626-8e95-f0fdb2e07010" ParentGuid="ddacf8d0-1ffc-48ba-8f13-c9d287c897d7" />
+<TargetApplication AppName="MyWebServicesApp" Guid="df174359-88d8-4c37-90ad-c0841da5f750" ParentGuid="a954b263-1807-47fe-bc9a-ae8bc9799c20" />
+</TargetApplications>
+</BusinessFlow></GingerRepositoryItem>

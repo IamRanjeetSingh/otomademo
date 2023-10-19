@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="a135ecc0-0565-4873-a023-6cb4e1b0cf55" ItemType="BusinessFlow" CreatedBy="harsisin" Created="202310190910" GingerVersion="23.4.0.0" Version="12" LastUpdateBy="harsisin" LastUpdate="202310191101" />
+<BusinessFlow Guid="a135ecc0-0565-4873-a023-6cb4e1b0cf55" Name="Flow 1" ParentGuid="00000000-0000-0000-0000-000000000000" Source="Ginger" Status="Unknown">
+<Activities>
+<Activity Active="True" ActivitiesGroupID="Group" ActivityName="BF1_WEB_A1" Guid="d16e6798-e34e-48fd-87fb-0ce0aa05ed95" ParentGuid="d16e6798-e34e-48fd-87fb-0ce0aa05ed95" Type="Link" />
+<Activity Active="True" ActivitiesGroupID="Group" ActivityName="BF1_REST_A2" Guid="6db1802e-7a14-4a85-96a3-31e26cd39ac7" ParentGuid="6db1802e-7a14-4a85-96a3-31e26cd39ac7" Type="Link" />
+</Activities>
+
+<ActivitiesGroups>
+<ActivitiesGroup Guid="9ed35613-a426-43ce-8183-5b254f93914b" Name="Group" ParentGuid="00000000-0000-0000-0000-000000000000">
+<ActivitiesIdentifiers>
+<ActivityIdentifiers ActivityAutomationStatus="Automated" ActivityGuid="d16e6798-e34e-48fd-87fb-0ce0aa05ed95" ActivityName="BF1_WEB_A1" ActivityParentGuid="d16e6798-e34e-48fd-87fb-0ce0aa05ed95" Guid="7542cd69-9d45-4311-a95b-442e012d0999" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Automated" ActivityGuid="6db1802e-7a14-4a85-96a3-31e26cd39ac7" ActivityName="BF1_REST_A2" ActivityParentGuid="6db1802e-7a14-4a85-96a3-31e26cd39ac7" Guid="f444f12c-f59c-4925-8719-173277616df9" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</ActivitiesIdentifiers>
+</ActivitiesGroup>
+</ActivitiesGroups>
+
+<TargetApplications>
+<TargetApplication AppName="MyWebApp" Guid="8a34e3bd-631a-4c82-a380-362e99944cd1" ParentGuid="ddacf8d0-1ffc-48ba-8f13-c9d287c897d7" />
+<TargetApplication AppName="MyWebServicesApp" Guid="851acc56-77fb-4698-a73a-8ff978914077" ParentGuid="a954b263-1807-47fe-bc9a-ae8bc9799c20" />
+</TargetApplications>
+</BusinessFlow></GingerRepositoryItem>
