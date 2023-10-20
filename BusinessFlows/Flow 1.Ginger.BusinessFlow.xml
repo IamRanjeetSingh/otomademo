@@ -1,6 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<GingerRepositoryItem><Header ItemGuid="a135ecc0-0565-4873-a023-6cb4e1b0cf55" ItemType="BusinessFlow" CreatedBy="harsisin" Created="202310190910" GingerVersion="23.4.0.0" Version="13" LastUpdateBy="harsisin" LastUpdate="202310200602" />
+<GingerRepositoryItem><Header ItemGuid="a135ecc0-0565-4873-a023-6cb4e1b0cf55" ItemType="BusinessFlow" CreatedBy="harsisin" Created="202310190910" GingerVersion="23.4.0.0" Version="15" LastUpdateBy="harsisin" LastUpdate="202310200607" />
 <BusinessFlow Guid="a135ecc0-0565-4873-a023-6cb4e1b0cf55" Name="Flow 1" ParentGuid="00000000-0000-0000-0000-000000000000" Source="Ginger" Status="Unknown">
+<Activities>
+<Activity Active="True" ActivitiesGroupID="Group_BF1" ActivityName="BF1_WEB_A1" Guid="ce3ddd9b-f168-4818-81d6-7e7d7168a649" ParentGuid="ce3ddd9b-f168-4818-81d6-7e7d7168a649" Type="Link" />
+<Activity Active="True" ActivitiesGroupID="Group_BF1" ActivityName="BF1_REST_A2" Guid="39c79f74-7659-438a-acab-15322f6288e6" ParentGuid="39c79f74-7659-438a-acab-15322f6288e6" Type="Link" />
+</Activities>
+
+<ActivitiesGroups>
+<ActivitiesGroup Guid="10420f78-972e-45c7-99a2-ed70d0162963" Name="Group_BF1" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True">
+<ActivitiesIdentifiers>
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="ce3ddd9b-f168-4818-81d6-7e7d7168a649" ActivityName="BF1_WEB_A1" ActivityParentGuid="00000000-0000-0000-0000-000000000000" Guid="86de1fee-b5a4-4c4b-a19c-2e2bf19632c2" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="39c79f74-7659-438a-acab-15322f6288e6" ActivityName="BF1_REST_A2" ActivityParentGuid="00000000-0000-0000-0000-000000000000" Guid="156d264b-66e4-487a-9b5f-2ec30bd3644c" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</ActivitiesIdentifiers>
+</ActivitiesGroup>
+</ActivitiesGroups>
+
 <TargetApplications>
 <TargetApplication AppName="MyWebApp" Guid="8a34e3bd-631a-4c82-a380-362e99944cd1" ParentGuid="ddacf8d0-1ffc-48ba-8f13-c9d287c897d7" />
 <TargetApplication AppName="MyWebServicesApp" Guid="851acc56-77fb-4698-a73a-8ff978914077" ParentGuid="a954b263-1807-47fe-bc9a-ae8bc9799c20" />
