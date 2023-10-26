@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<GingerRepositoryItem><Header ItemGuid="3777ab0b-44a3-4dee-bcf3-dab4c878fada" ItemType="Activity" CreatedBy="harsisin" Created="202310191102" GingerVersion="23.4.0.0" Version="1" LastUpdateBy="harsisin" LastUpdate="202310191102" />
-<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivityName="BF2_REST_A2" AutomationStatus="Automated" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="3777ab0b-44a3-4dee-bcf3-dab4c878fada" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="0%" POMMetaDataId="00000000-0000-0000-0000-000000000000" Publish="True" TargetApplication="MyWebServicesApp" Type="Regular">
+<GingerRepositoryItem><Header ItemGuid="f940a3e2-75b1-4900-84dd-f35a225bcbeb" ItemType="Activity" CreatedBy="harsisin" Created="202310261033" GingerVersion="23.4.0.0" Version="1" LastUpdateBy="harsisin" LastUpdate="202310261033" />
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivityName="BF2_REST_A2" AutomationStatus="Automated" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="f940a3e2-75b1-4900-84dd-f35a225bcbeb" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="0%" POMMetaDataId="00000000-0000-0000-0000-000000000000" Publish="True" TargetApplication="MyWebServicesApp" Type="Regular">
 <ConsumerApplications>
-<Consumer ConsumerGuid="ddacf8d0-1ffc-48ba-8f13-c9d287c897d7" Guid="cf79b9d8-4005-48de-b391-a7f1ba3d0c9d" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<Consumer ConsumerGuid="ddacf8d0-1ffc-48ba-8f13-c9d287c897d7" Guid="4b1e6dbf-5226-40a3-a93f-f29f19d0d832" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </ConsumerApplications>
 </Activity></GingerRepositoryItem>
