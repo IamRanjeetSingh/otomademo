@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:ig="http://insightguard.com/schema/1.0/bpmn" targetNamespace="http://bpmn.io/schema/bpmn">
+  <bpmn:collaboration id="Collaboration_a8d24597-b48c-402e-9259-2d18daba4d3c" isClosed="false" name="Group_BF3">
+    <documentation id="doc_Collaboration_a8d24597-b48c-402e-9259-2d18daba4d3c" textFormat="text/plain" xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" />
+    <bpmn:extensionElements xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL">
+      <ig:bpmnMetadata>
+        <ig:uuid>a8d24597-b48c-402e-9259-2d18daba4d3c</ig:uuid>
+        <ig:bpmnName>Group_BF3</ig:bpmnName>
+        <ig:description></ig:description>
+        <ig:systemRef>ddacf8d0-1ffc-48ba-8f13-c9d287c897d7</ig:systemRef>
+        <ig:domainRef>32</ig:domainRef>
+        <ig:collaborationType>SUBPROCESS</ig:collaborationType>
+      </ig:bpmnMetadata>
+    </bpmn:extensionElements>
+    <bpmn:participant id="participant_ddacf8d0-1ffc-48ba-8f13-c9d287c897d7" ig:systemRef="ddacf8d0-1ffc-48ba-8f13-c9d287c897d7" name="MyWebApp" processRef="participant_ddacf8d0-1ffc-48ba-8f13-c9d287c897d7_process">
+      <bpmn:documentation textFormat="text/plain" />
+    </bpmn:participant>
+    <bpmn:participant id="participant_a954b263-1807-47fe-bc9a-ae8bc9799c20" ig:systemRef="a954b263-1807-47fe-bc9a-ae8bc9799c20" name="MyWebServicesApp" processRef="participant_a954b263-1807-47fe-bc9a-ae8bc9799c20_process">
+      <bpmn:documentation textFormat="text/plain" />
+    </bpmn:participant>
+    <bpmn:messageFlow id="flow_035cb864-66fb-430a-b3c0-96d5bf511a47" ig:messageRef="c3a49e34-bb07-4477-8fec-fb2134b769bb" name="BF3_REST_A2_OUT" sourceRef="task_85570c06-45ed-4a01-91ef-2a2a92705625" targetRef="task_e3e076d1-bc56-4586-be1f-3d3b87676632">
+      <bpmn:documentation textFormat="text/plain" />
+    </bpmn:messageFlow>
+    <bpmn:messageFlow id="flow_47f34c36-4c24-472f-ac36-a2b2d798201d" ig:messageRef="c3a49e34-bb07-4477-8fec-fb2134b769aa" name="BF3_REST_A2_IN" sourceRef="task_3adbcd68-eb70-48ca-abc6-043a61a81895" targetRef="task_768d4c62-a3b4-445e-886a-fd108aa84184">
+      <bpmn:documentation textFormat="text/plain" />
+    </bpmn:messageFlow>
+  </bpmn:collaboration>
+  <bpmn:process id="participant_ddacf8d0-1ffc-48ba-8f13-c9d287c897d7_process" isClosed="false" processType="None">
+    <bpmn:userTask completionQuantity="1" id="task_aea7892a-ab7f-4a4c-b3ca-679d974e75ac" ig:messageRef="aea7892a-ab7f-4a4c-b3ca-679d974e75aa" implementation="##unspecified" isForCompensation="false" name="BF3_WEB_A1" startQuantity="1">
+      <bpmn:documentation textFormat="text/plain" />
+      <bpmn:incoming>flow_e028744a-2831-43dc-a232-d44ed4b64d5a</bpmn:incoming>
+      <bpmn:outgoing>flow_0505fb1f-289d-41d0-9bd8-bb6de5f5c0a3</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:sendTask completionQuantity="1" id="task_3adbcd68-eb70-48ca-abc6-043a61a81895" isForCompensation="false" name="BF3_REST_A2_RequestSource" startQuantity="1" implementation="##WebService">
+      <bpmn:documentation textFormat="text/plain" />
+      <bpmn:incoming>flow_0505fb1f-289d-41d0-9bd8-bb6de5f5c0a3</bpmn:incoming>
+      <bpmn:outgoing>flow_47f34c36-4c24-472f-ac36-a2b2d798201d</bpmn:outgoing>
+    </bpmn:sendTask>
+    <bpmn:receiveTask completionQuantity="1" id="task_e3e076d1-bc56-4586-be1f-3d3b87676632" isForCompensation="false" name="BF3_REST_A2_ResponseTarget" startQuantity="1" implementation="##WebService" instantiate="false">
+      <bpmn:documentation textFormat="text/plain" />
+      <bpmn:incoming>flow_035cb864-66fb-430a-b3c0-96d5bf511a47</bpmn:incoming>
+      <bpmn:outgoing>flow_0b7c3cb6-9cfb-4980-b4d0-0eaecda7e963</bpmn:outgoing>
+    </bpmn:receiveTask>
+    <bpmn:startEvent id="event_ba4e07c4-eb1b-4996-9bef-696fea4744f9" isInterrupting="true" name="" parallelMultiple="false">
+      <bpmn:documentation textFormat="text/plain" />
+      <bpmn:outgoing>flow_e028744a-2831-43dc-a232-d44ed4b64d5a</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:endEvent id="event_a7bfb2f4-9191-4152-95ec-08762214cd54" name="">
+      <bpmn:documentation textFormat="text/plain" />
+      <bpmn:incoming>flow_0b7c3cb6-9cfb-4980-b4d0-0eaecda7e963</bpmn:incoming>
+      <bpmn:terminateEventDefinition />
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="flow_e028744a-2831-43dc-a232-d44ed4b64d5a" name="" sourceRef="event_ba4e07c4-eb1b-4996-9bef-696fea4744f9" targetRef="task_aea7892a-ab7f-4a4c-b3ca-679d974e75ac">
+      <bpmn:documentation textFormat="text/plain" />
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="flow_0505fb1f-289d-41d0-9bd8-bb6de5f5c0a3" name="" sourceRef="task_aea7892a-ab7f-4a4c-b3ca-679d974e75ac" targetRef="task_3adbcd68-eb70-48ca-abc6-043a61a81895">
+      <bpmn:documentation textFormat="text/plain" />
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="flow_0b7c3cb6-9cfb-4980-b4d0-0eaecda7e963" name="" sourceRef="task_e3e076d1-bc56-4586-be1f-3d3b87676632" targetRef="event_a7bfb2f4-9191-4152-95ec-08762214cd54">
+      <bpmn:documentation textFormat="text/plain" />
+    </bpmn:sequenceFlow>
+  </bpmn:process>
+  <bpmn:process id="participant_a954b263-1807-47fe-bc9a-ae8bc9799c20_process" isClosed="false" processType="None">
+    <bpmn:receiveTask completionQuantity="1" id="task_768d4c62-a3b4-445e-886a-fd108aa84184" isForCompensation="false" name="BF3_REST_A2_RequestTarget" startQuantity="1" implementation="##WebService" instantiate="false">
+      <bpmn:documentation textFormat="text/plain" />
+      <bpmn:incoming>flow_47f34c36-4c24-472f-ac36-a2b2d798201d</bpmn:incoming>
+      <bpmn:outgoing>flow_2582826c-a962-4edc-8d0d-591224f4d1bb</bpmn:outgoing>
+    </bpmn:receiveTask>
+    <bpmn:sendTask completionQuantity="1" id="task_85570c06-45ed-4a01-91ef-2a2a92705625" isForCompensation="false" name="BF3_REST_A2_ResponseSource" startQuantity="1" implementation="##WebService">
+      <bpmn:documentation textFormat="text/plain" />
+      <bpmn:incoming>flow_2582826c-a962-4edc-8d0d-591224f4d1bb</bpmn:incoming>
+      <bpmn:outgoing>flow_035cb864-66fb-430a-b3c0-96d5bf511a47</bpmn:outgoing>
+    </bpmn:sendTask>
+    <bpmn:sequenceFlow id="flow_2582826c-a962-4edc-8d0d-591224f4d1bb" name="" sourceRef="task_768d4c62-a3b4-445e-886a-fd108aa84184" targetRef="task_85570c06-45ed-4a01-91ef-2a2a92705625">
+      <bpmn:documentation textFormat="text/plain" />
+    </bpmn:sequenceFlow>
+  </bpmn:process>
+</bpmn:definitions>
