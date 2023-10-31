@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="bfa57900-a34b-4b92-b023-48f8cf4aa753" ItemType="Activity" CreatedBy="harsisin" Created="202310310932" GingerVersion="23.4.0.0" Version="2" LastUpdateBy="harsisin" LastUpdate="202310310940" />
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivityName="BF4_REST_A2" AutomationStatus="Automated" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="bfa57900-a34b-4b92-b023-48f8cf4aa753" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="0%" POMMetaDataId="00000000-0000-0000-0000-000000000000" Publish="True" TargetApplication="MyWebServicesApp" Type="Regular">
+<ConsumerApplications>
+<Consumer ConsumerGuid="ddacf8d0-1ffc-48ba-8f13-c9d287c897d7" Guid="ac02239e-e4a5-494e-b941-b01503501768" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</ConsumerApplications>
+</Activity></GingerRepositoryItem>

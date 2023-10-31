@@ -1,3 +1,3 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<GingerRepositoryItem><Header ItemGuid="7943d10d-9c65-4ad4-9a5a-eda6da73be1c" ItemType="Activity" CreatedBy="harsisin" Created="202310261033" GingerVersion="23.4.0.0" Version="1" LastUpdateBy="harsisin" LastUpdate="202310261033" />
+<GingerRepositoryItem><Header ItemGuid="7943d10d-9c65-4ad4-9a5a-eda6da73be1c" ItemType="Activity" CreatedBy="harsisin" Created="202310261033" GingerVersion="23.4.0.0" Version="2" LastUpdateBy="harsisin" LastUpdate="202310310940" />
 <Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivityName="BF2_WEB_A1" AutomationStatus="Automated" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="7943d10d-9c65-4ad4-9a5a-eda6da73be1c" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="0%" POMMetaDataId="00000000-0000-0000-0000-000000000000" Publish="True" TargetApplication="MyWebApp" Type="Regular" /></GingerRepositoryItem>
